@@ -1,3 +1,5 @@
+![github-banner](https://github.com/swiyu-admin-ch/swiyu-admin-ch.github.io/blob/main/assets/images/github-banner.jpg)
+
 # Welcome to the Swiss Trust Infrastructure Community
 
 A project with such far-reaching implications as the undertaking to create the state electronic identity and an associated trust infrastructure for digital certificates requires a broad base of active and constructive contributors to the dialog. The project team looks forward to your participation!
