@@ -14,7 +14,7 @@ Documents and presentations from all online meetings are made available in [this
 
 ## Discussions
 
-This repository combines discussions and questions on technology and governance topics related to the digital Swiss Trust Infrastructure in one place. 
+This repository combines [discussions](https://github.com/swiyu-admin-ch/community/discussions) and questions on technology, governance, and other topics related to the digital Swiss Trust Infrastructure in one place. Feel free to start a new discussion and select a category that best suits your topic.
 
 ## Documentation of the Swiss Trust Infrastructure
 
