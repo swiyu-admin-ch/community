@@ -20,7 +20,12 @@ This repository combines [discussions](https://github.com/swiyu-admin-ch/communi
 
 On the [swiyu docs website](https://swiyu-admin-ch.github.io/) we provide a technical overview, deeper insights on standards and protocols as well as cookbooks for the onboarding to the different components of the Swiss e-ID trust infrastructure.
 
+## Rules for all participants and community management procedures
 
+All collaboration on the platform is subject to the GitHub [Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service). We all work together to ensure a goal-oriented development and objective discussion. Doing so, we follow the [community guidelines](https://docs.github.com/en/site-policy/github-terms/github-community-guidelines) and the corresponding code of conduct. These rules must always be adhered to. There is no place for personal interference in the discussions.
 
+Please be aware that all content on this platform is public. This also applies to the sharing of data such as presentations or working papers: no author rights may be violated.
 
+The community management reserves the right to give individual contributions more weight in order to draw attention to certain aspects. Similarly, contributions can be hidden or deleted by the community management to improve the quality of discussion threads.
 
+Ultimately, the e-ID project is not bound by the input from this participation platform for the development and decision-making process for the implementation of the future state e-ID. All content on this platform is an informal exchange.
