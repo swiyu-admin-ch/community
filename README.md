@@ -14,11 +14,11 @@ Documents and presentations from all online meetings are made available in [this
 
 ## Discussions
 
-This repository combines [discussions](https://github.com/swiyu-admin-ch/community/discussions) and questions on technology, governance, and other topics related to the digital Swiss Trust Infrastructure in one place. Feel free to start a new discussion and select a category that best suits your topic.
+This repository combines [discussions](https://github.com/swiyu-admin-ch/community/discussions) and questions on technology, governance, and other topics related to the swyiu Trust Infrastructure in one place. Feel free to start a new discussion and select a category that best suits your topic.
 
 ## Documentation of the swiyu Trust Infrastructure
 
-On the [swiyu docs website](https://swiyu-admin-ch.github.io/) we provide a technical overview, deeper insights on standards and protocols as well as cookbooks for the onboarding to the different components of the swiyu Public Beta Trust Infrastructure.
+On the [swiyu docs website](https://swiyu-admin-ch.github.io/) we provide a technical overview, deeper insights on standards and protocols as well as cookbooks for the onboarding to the different components of the swiyu Public Beta Trust Infrastructure. Request for Comments (RFC) and swiyu specific standards are documented in the [specifications](specifications) folder. 
 
 ## Rules for all participants and community management procedures
 
