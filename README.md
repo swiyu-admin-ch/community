@@ -18,7 +18,7 @@ This repository combines [discussions](https://github.com/swiyu-admin-ch/communi
 
 ## Documentation of the swiyu Trust Infrastructure
 
-On the [swiyu docs website](https://swiyu-admin-ch.github.io/) we provide a technical overview, deeper insights on standards and protocols as well as cookbooks for the onboarding to the different components of the swiyu Public Beta Trust Infrastructure. Request for Comments (RFC) and swiyu specific standards are documented in the [specifications](specifications) folder. 
+On the [swiyu technical documentation website](https://swiyu-admin-ch.github.io/) we provide a technical overview, deeper insights on standards and protocols as well as cookbooks for the onboarding to the different components of the swiyu Public Beta Trust Infrastructure.
 
 ## Rules for all participants and community management procedures
 
