@@ -10,7 +10,7 @@ Following the preliminary implementation Roadmap (dependent on the legal process
 
 ## Slides of the participation meeting
 
-Documents and presentations from all online meetings are made available in [this folder](../tree/main/meetings) by the project team. 
+Documents and presentations from all online meetings are made available in [this folder](https://github.com/swiyu-admin-ch/community/tree/main/meetings) by the project team. 
 
 ## Discussions
 
