@@ -1,6 +1,6 @@
 # swiyu Trust Infrastructure RFCs
 
-This folder hosts Requests for Comments (RFCs) and specific standards for the Swiss e-ID Trust Infrastructure, including specifications, standardizations, and solution approaches.
+This folder hosts Requests for Comments (RFCs) and specific standards for the Swiss e-ID Trust Infrastructure, including specifications, standardizations, and solution approaches. Currently applicable standards are published on the [swiyu technical documentation website](https://swiyu-admin-ch.github.io/specifications/).
 
 ## Participation
 
