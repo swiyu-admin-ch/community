@@ -10,7 +10,7 @@ Following the preliminary implementation Roadmap (dependent on the legal process
 
 ## Slides of the participation meeting
 
-Documents and presentations from all online meetings are made available in [this folder](https://github.com/swiyu-admin-ch/community/tree/main/meetings) by the project team. 
+Documents and presentations from all online meetings from 2025 onwards are made available in [this folder](https://github.com/swiyu-admin-ch/community/tree/main/meetings) by the project team. Older presentations can be found [here](https://github.com/e-id-admin/general/tree/main/meetings). If you missed a meeting, you can watch the recording on our [YouTube channel](https://www.youtube.com/@swiyu-admin-ch).
 
 ## Discussions
 
