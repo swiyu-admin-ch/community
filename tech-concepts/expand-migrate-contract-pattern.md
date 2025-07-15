@@ -1,12 +1,13 @@
 # Expand-Migrate-Contract Pattern
 
-In order to avoid breaking changes in the swiyu Trust Infrastructure we apply the Expand - Contract Pattern with an additional step. Expand-Migrate-Contract works by breaking down changes that are by themselves breaking, i.e. not backward compatible into three distinct, backward compatible phases.
+In order to avoid breaking changes in the swiyu Trust Infrastructure we apply the Expand - Contract Pattern with an additional step. Expand-Migrate-Contract works by breaking down changes that are by themselves breaking (i.e. not backward compatible) into three distinct, backward compatible phases.
 
 ![emc-pattern](https://github.com/swiyu-admin-ch/swiyu-admin-ch.github.io/blob/main/assets/images/EMC-Pattern.png)
 
 ## Chronological order
 
-For the swiyu Public Beta Trust Infrastructure, the timeframe for the migrate step will be approximately one month. The expand step from our side will be announced as early as possible.
+For the swiyu Public Beta Trust Infrastructure, the timeframe for the migrate step will be approximately one month. For the productive infrastructure we will extend this timeframe to 3 months (working hypothesis).
+The expand step from our side will be announced as early as possible.
 
 ### Analysis and Preparation
 
@@ -25,9 +26,10 @@ For the swiyu Public Beta Trust Infrastructure, the timeframe for the migrate st
 
 ### Migration Phase
 
-- Default duration will be 3 months, deviations may occur if needed. 
+- Default duration will be one month for Public Beta, deviations may occur if needed. 
 
 ### Contract
 
-- Earliest after 3 months of migration (Note: extraordinary situations could demand shorter periods but this will be communicated accordingly)
+- Earliest after one month of migration (Public Beta Infrastructure)
+- Note: extraordinary situations could demand shorter periods but this will be communicated accordingly
 - Before Contract is executed stakeholders may be consulted to ensure system stability
