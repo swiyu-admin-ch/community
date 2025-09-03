@@ -1,7 +1,7 @@
 <p align ="right">CEA KRYPT, 10.06.2025<p>
 
 
-<h1 align="center">e-ID<br>Key Management for e-ID - Batch Issuance and Renewal<br>V 1.0
+<h1 align="center">e-ID<br>Key Management for e-ID - Batch Issuance and Renewal<br>V 1.1
 
 
 <h2>Introduction</h2>
@@ -16,7 +16,7 @@ The Swiss Confederation (Bund) generates and administrates its own key pair for 
 Issuer Key Pair:
 | Secret Key (HSM) | Public Key | Key Type |
 | :--------: | :--------: |:--------: |
-| $sk_{Bund}$ | $pk_{Bund}$ | EdDSA on Ed448 |
+| $sk_{Bund}$ | $pk_{Bund}$ | EdDSA on Ed25519 |
 
 Using the wallet application, the prover (i.e., the holder in the standard documentation) can access the issuer public key. This key is available in the “Basisregister”, and its address is contained in a standard SD-JWT data block (type `iss` for issuer). More precisely, it is a field contained in a standard verifiable credential defined by a “Decentralized Identifier (DID)” value. The integrity of this field is guaranteed by the chosen implementation of DIDs[^1]. 
 
@@ -120,7 +120,6 @@ The holder will use their renew key pair and JWT_renew to get a new $SD_{JWT}$ a
 Before issuing a new $SD_{JWT}$ to the holder, the issuer must make sure that:
 - it can identify and authenticate the holder
 - it has the personal data belonging to the holder of the key pair $pk_{renew}$/ $sk_{renew}$
-- the key attestation of the new public key belongs to the same device as the key attestation of the $pk_{renew}$
 - *if* key attestation is not available (e.g. iOS): the attestation provided is valid and confirms the version of the app is unaltered and the holder is still in possession of the app attestation key provided during initial issuance.
 - the holder holds the private key $sk_{renew}$ associated to the public key $pk_{renew}$
 - the holder holds the private key associated to the new public key; this new public key will be included in the new $SD_{JWT}$.
@@ -155,6 +154,24 @@ From a privacy perspective, **single-use credentials** are the preferred approac
 
 
 
+[^1]: https://identity.foundation/didwebvh/v1.0/
+[^2]: https://www.ietf.org/archive/id/draft-ietf-oauth-selective-disclosure-jwt-17.txt (page 3-4).
+[^3]: DCAppAttestService.generateKey(completionHandler)
+[^4]: Option: the holder must provide a PIN or a biometric mean each time he uses a secret key
+
+
+
+<br>
+<br>
+<br>
+
+**Changelog:**
+<br>
+<br>
+v1.1:
+- use curve Ed25519 instead of Ed448 for the issuer signature
+- remove same-device binding requirement for renewal: "the key attestation of the new public key belongs to the same device as the key attestation of the *pk_{renew}*"
+
 
 <br>
 <h3> Authors </h3>
@@ -168,9 +185,3 @@ Dr. Alexandra Höß <br> Verantwortliche Technologiestrategie <br> Fachbereich e
 Jonas Niestroj <br> System Architekt <br> Bundesamt für Informatik und Telekommunikation
 
 <br>
-
-
-[^1]: https://identity.foundation/didwebvh/v1.0/
-[^2]: https://www.ietf.org/archive/id/draft-ietf-oauth-selective-disclosure-jwt-17.txt (page 3-4).
-[^3]: DCAppAttestService.generateKey(completionHandler)
-[^4]: Option: the holder must provide a PIN or a biometric mean each time he uses a secret key
