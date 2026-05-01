@@ -8,7 +8,5 @@ To participate and provide feedback, we encourage you to either create a pull re
 
 ## Current RFCs
 
-- [Swiss OCA](specifications/oca)
-- [Trust protocol based on VCs](specifications/trust-protocol)
 - [Wallet Backup Container](specifications/wallet-backup-container)
 
