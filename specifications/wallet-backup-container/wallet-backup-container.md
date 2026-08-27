@@ -1,7 +1,7 @@
 # Wallet Backup Container
 
 Status: Draft<br/>
-Version: 0.2<br/>
+Version: 0.3<br/>
 
 ## Introduction
 
@@ -137,6 +137,45 @@ Example of a `VerifiableCredentialContainerV1`  container:
          "..."
        ]
     },
+  ]
+}
+```
+
+### CredentialAuthenticationContainerV1
+Container specified with the property type `CredentialAuthenticationContainerV1` **MUST** include the following property:
+
+- `credentialAuthentications`: Array of credential authentications with their associated verifiable credential identifier.
+    - `vcId`: Unique identifier of the associated verifiable credential.
+    - `refreshToken`
+    - `tokenType`: **MUST** be either `bearer` or `dpop`.
+    - `dpop`: (optional) DPoP binding. **MUST** be present when `tokenType` is `dpop`.
+        - `jwk`: Software-bound private key
+
+A credential is treated as refreshable, when it has an authentication entry in this container.
+
+<br/>
+
+Example of a `CredentialAuthenticationContainerV1` container:
+
+```json
+{
+  "type": "CredentialAuthenticationContainerV1",
+  "credentialAuthentications": [
+    {
+      "vcId": "270f003b-ea23-4819-b9ec-bf1f238859a3",
+      "refreshToken": "...",
+      "tokenType": "bearer"
+    },
+    {
+      "vcId": "3c6b9350-4f67-41bc-8db5-c9603c947e1d",
+      "refreshToken": "...",
+      "tokenType": "dpop",
+      "dpop": {
+        "jwk": {
+          ...
+        }
+      }
+    }
   ]
 }
 ```
