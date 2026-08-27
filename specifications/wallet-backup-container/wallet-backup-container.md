@@ -1,7 +1,7 @@
 # Wallet Backup Container
 
 Status: Draft<br/>
-Version: 0.3<br/>
+Version: 0.4<br/>
 
 ## Introduction
 
@@ -40,7 +40,9 @@ wbak-2.jwe
 The Metadata file **MUST** contain a JSON data structure with the following content:  
 
 - `type`: Version of the Wallet Backup Container specification and **MUST** be `WalletBackupContainerV1`.
-- `creationDate`: Creation date of the backup, **MUST** be defined and **MUST** use the [ISO 8601 date format](https://www.iso.org/iso-8601-date-and-time-format.html).
+- `creationDate`: Creation date of the backup, **MUST** be defined and **MUST** use the [ISO 8601 date format](https://www.iso.org/iso-8601-date-and-time-format.
+html).
+- `profile_version`: VC portability can only be guaranteed when the importing wallet is supporting the version given by this value
 
 <br/>
 
@@ -49,7 +51,8 @@ Example of `meta.json` file:
 ```json
 {
   "type": "WalletBackupContainerV1",
-  "creationDate": "2025-01-01T15:50+00Z"
+  "creationDate": "2025-01-01T15:50+00Z",
+  "profile_version": "swiss-profile-portability:1.0.0"
 }
 ```
 
@@ -104,11 +107,14 @@ Example of `wbak-0.json` file:
 ### VerifiableCredentialContainerV1
 Container specified with the property type `VerifiableCredentialContainerV1` **MUST** include the following property:
 
-- `vcs`: Array of VC copies with their associated private key, if available.
-    - `id`: Unique identifier 
+- `vcs`: Array of verifiable credential batches, optionally with their holder binding key.
+    - `id`: Unique identifier
     - `format`: Format of the verifiable credential. Format **SHOULD** be part of the [Credential Format Profile from OpenID4VCI](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html#name-credential-format-profiles) specification.
-    - `vc`: Verifiable Credential encoded in Base64URL.
-    - `jwks`: (optional) Array of private keys in [JWK format (RFC7517)](https://datatracker.ietf.org/doc/html/rfc7517) necessary to create the VC proofs encoded as compact JWEs.
+    - `credentials`: Array of VC batch items.
+        - `vc`: Verifiable Credential encoded in Base64URL.
+        - `jwk`: (optional) private software holder binding key in [JWK format (RFC7517)](https://datatracker.ietf.org/doc/html/rfc7517) necessary to create holder binding proofs.
+
+In case of a hardware-bound batch credential, only a single VC batch item **MUST** be exported.
 
 <br/>
 
@@ -116,27 +122,44 @@ Example of a `VerifiableCredentialContainerV1`  container:
 
 ```json
 {
-  "type": "VerifiableCredentialContainerV1"
+  "type": "VerifiableCredentialContainerV1",
   "vcs": [
     {
-       "id": "270f003b-ea23-4819-b9ec-bf1f238859a3", // example no key binding like a cinema ticket without a holder public key in the "vc" property.
-       "format": "vc+sd-jwt",
-       "vc": "..."
+      "id": "270f003b-ea23-4819-b9ec-bf1f238859a3", // credential with no key binding, only one credential in credential-batch
+      "format": "vc+sd-jwt",
+      "credentials": [
+        {
+          "vc": "..."
+        }
+      ]
     },
     {
-       "id": "ffbf6101-dee3-48d2-83c3-e625339660de", // example hardware bound e-ID with a holder public key in the "vc" property but no "jwks" property.
-       "format": "vc+sd-jwt",
-       "vc": "..."
+      "id": "ffbf6101-dee3-48d2-83c3-e625339660de", // hardware bound credential, therefore no exported holder binding jwk
+      "format": "vc+sd-jwt",
+      "credentials": [
+        {
+          "vc": "..."
+        }
+      ]
     },
     {
-       "id": "3c6b9350-4f67-41bc-8db5-c9603c947e1d", // example software bound public key with a holder public key in the "vc" property with a "jwks" property.
-       "format": "vc+sd-jwt",
-       "vc": "...",
-       "jwks": [
-         "...",
-         "..."
-       ]
-    },
+      "id": "3c6b9350-4f67-41bc-8db5-c9603c947e1d", // software bound credential with holder binding key, multiple credential in credential-batch
+      "format": "vc+sd-jwt",
+      "credentials": [
+        {
+          "vc": "...",
+          "jwk": {
+            ...
+          }
+        },
+        {
+          "vc": "...",
+          "jwk": {
+            ...
+          }
+        }
+      ]
+    }
   ]
 }
 ```
