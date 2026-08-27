@@ -1,7 +1,7 @@
 # Wallet Backup Container
 
 Status: Draft<br/>
-Version: 0.4<br/>
+Version: 0.3<br/>
 
 ## Introduction
 
@@ -40,8 +40,7 @@ wbak-2.jwe
 The Metadata file **MUST** contain a JSON data structure with the following content:  
 
 - `type`: Version of the Wallet Backup Container specification and **MUST** be `WalletBackupContainerV1`.
-- `creationDate`: Creation date of the backup, **MUST** be defined and **MUST** use the [ISO 8601 date format](https://www.iso.org/iso-8601-date-and-time-format.
-html).
+- `creationDate`: Creation date of the backup, **MUST** be defined and **MUST** use the [ISO 8601 date format](https://www.iso.org/iso-8601-date-and-time-format.html).
 - `profile_version`: VC portability can only be guaranteed when the importing wallet is supporting the version given by this value
 
 <br/>
