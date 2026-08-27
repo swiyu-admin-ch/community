@@ -106,7 +106,7 @@ Example of `wbak-0.json` file:
 ### VerifiableCredentialContainerV1
 Container specified with the property type `VerifiableCredentialContainerV1` **MUST** include the following property:
 
-- `vcs`: Array of verifiable credential batches, optionally with their holder binding key.
+- `vcs`: Array of VC batches.
     - `id`: Unique identifier
     - `format`: Format of the verifiable credential. Format **SHOULD** be part of the [Credential Format Profile from OpenID4VCI](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html#name-credential-format-profiles) specification.
     - `credentials`: Array of VC batch items.
@@ -168,7 +168,7 @@ Container specified with the property type `CredentialAuthenticationContainerV1`
 
 - `credentialAuthentications`: Array of credential authentications with their associated verifiable credential identifier.
     - `vcId`: Unique identifier of the associated verifiable credential.
-    - `refreshToken`
+    - `refreshToken`: OAuth 2.0 `refresh_token` for token rotation by the credential issuer's authorization server
     - `tokenType`: **MUST** be either `bearer` or `dpop`.
     - `dpop`: (optional) DPoP binding. **MUST** be present when `tokenType` is `dpop`.
         - `jwk`: Software-bound private key
