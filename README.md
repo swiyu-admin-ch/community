@@ -4,9 +4,9 @@
 
 A project with such far-reaching implications as the undertaking to create the state electronic identity and an associated trust infrastructure for digital certificates requires a broad base of active and constructive contributors to the dialog. The project team looks forward to your participation!
 
-## Public Beta Open Source Repositories
+## Sandbox Open Source Repositories
 
-Following the preliminary implementation Roadmap (dependent on the legal process), the swiyu Trust Infrastructure is planned to go live with a full production roll out in 2026. The swiyu Public Beta environment is made available to allow future participants from the public and private sector to prepare themselves for the final go live and provide feedback by contributing to the testing of the swiyu Trust Infrastrucure via already testing their use cases on it. The Open Source Code from Public Beta is available in the [different repositories](https://github.com/orgs/swiyu-admin-ch/repositories).
+Following the preliminary implementation Roadmap (dependent on the legal process), the swiyu Trust Infrastructure is planned to go live with a full production roll out in 2026. The swiyu Sandbox environment is made available to allow future participants from the public and private sector to prepare themselves for the final go live and provide feedback by contributing to the testing of the swiyu Trust Infrastrucure via already testing their use cases on it. The Open Source Code from the swiyu Sandbox Trust Infrastructure is available in the [different repositories](https://github.com/orgs/swiyu-admin-ch/repositories).
 
 ## Slides of the participation meeting
 
@@ -18,7 +18,7 @@ This repository combines [discussions](https://github.com/swiyu-admin-ch/communi
 
 ## Documentation of the swiyu Trust Infrastructure
 
-On the [swiyu technical documentation website](https://swiyu-admin-ch.github.io/) we provide a technical overview, deeper insights on standards and protocols as well as cookbooks for the onboarding to the different components of the swiyu Public Beta Trust Infrastructure.
+On the [swiyu technical documentation website](https://swiyu-admin-ch.github.io/) we provide a technical overview, deeper insights on standards and protocols as well as cookbooks for the onboarding to the different components of the swiyu Sandbox Trust Infrastructure.
 
 ## Rules for all participants and community management procedures
 
