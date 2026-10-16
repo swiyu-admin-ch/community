@@ -27,7 +27,7 @@ From now on, the program will be run in [public mode](https://www.bugbounty.ch/e
 | **Medium** | 179 | 18 | 14750 |
 | **Low** | 23 | 12 | 3000 |
 | **None** | 10 | 0 | 0 |
-| **Total** | **149** | **21** | **37750** |
+| **Total** | **328** | **36** | **37750** |
 
 
 ## More detailed reports
