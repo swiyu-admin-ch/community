@@ -22,16 +22,17 @@ From now on, the program will be run in [public mode](https://www.bugbounty.ch/e
 
 | Criticality | Submitted | Valid | Rewards |
 |--- |---: |---: |---: |
-| **Critical** | 17 | 1 | 5000 |
-| **High** | 41 | 2 | 5000 |
-| **Medium** | 68 | 10 | 7500 |
-| **Low** | 13 | 8 | 2000 |
+| **Critical** | 30 | 2 | 10000 |
+| **High** | 86 | 4 | 10000 |
+| **Medium** | 179 | 18 | 14750 |
+| **Low** | 23 | 12 | 3000 |
 | **None** | 10 | 0 | 0 |
-| **Total** | **149** | **21** | **19500** |
+| **Total** | **149** | **21** | **37750** |
 
 
 ## More detailed reports
 - [Public Bug Bounty Report April-June 2026](https://github.com/swiyu-admin-ch/community/blob/main/bug-bounty-reports/bug-bounty-report-april-june-2026.md)
+- [Public Bug Bounty Report July-September 2026](https://github.com/swiyu-admin-ch/community/blob/main/bug-bounty-reports/bug-bounty-report-july-september-2026.md)
 
 
 
