@@ -6,7 +6,7 @@ A project with such far-reaching implications as the undertaking to create the s
 
 ## Sandbox Open Source Repositories
 
-Following the preliminary implementation Roadmap (dependent on the legal process), the swiyu Trust Infrastructure is planned to go live with a full production roll out in 2026. The swiyu Sandbox environment is made available to allow future participants from the public and private sector to prepare themselves for the final go live and provide feedback by contributing to the testing of the swiyu Trust Infrastrucure via already testing their use cases on it. The Open Source Code from the swiyu Sandbox Trust Infrastructure is available in the [different repositories](https://github.com/orgs/swiyu-admin-ch/repositories).
+Following the preliminary implementation Roadmap (dependent on the legal process), the swiyu Trust Infrastructure is planned to go live with a full production roll out in 2027. The swiyu Sandbox environment is made available to allow future participants from the public and private sector to prepare themselves for the final go live and provide feedback by contributing to the testing of the swiyu Trust Infrastrucure via already testing their use cases on it. The Open Source Code from the swiyu Sandbox Trust Infrastructure is available in the [different repositories](https://github.com/orgs/swiyu-admin-ch/repositories).
 
 ## Slides of the participation meeting
 
